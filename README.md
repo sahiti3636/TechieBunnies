@@ -1,63 +1,161 @@
-# TechieBunnies 
-Safety Object Detection – YOLOv11
 
-**PROJECT STRUCTURE**
+# 🚀 TechieBunnies – SafetySense  
+### AI-Powered Detection of Space Station Safety Equipment (YOLOv11x)
 
-<img width="1198" height="888" alt="image" src="https://github.com/user-attachments/assets/a0c1919a-1d7f-4b9f-9db4-c7d649b5f0ba" />
+🎥 **Demo Video (YouTube)**  
+👉 *https://youtu.be/ModwTd9uXd0*
 
-**Environment Setup**
+📁 **Google Drive – Report Documents**  
+👉 *https://drive.google.com/drive/folders/1_vyTuObF4elS56UXTzZkcPZIiKbR5qEN?usp=share_link*
 
-**Mac / Linux** 
-python3 -m venv venv (or) python -m venv venv 
+SafetySense is an advanced AI-driven safety detection system built for the **Duality AI Space Station Challenge**. It detects **7 critical safety objects** across synthetic environments with varying lighting, clutter, room layouts, occlusion, and spatial configurations using a fine‑tuned **YOLOv11x** model.
+
+---
+
+# 🧠 Detected Classes
+| ID | Object |
+|----|--------------------|
+| 0 | OxygenTank |
+| 1 | NitrogenTank |
+| 2 | FirstAidBox |
+| 3 | FireAlarm |
+| 4 | SafetySwitchPanel |
+| 5 | EmergencyPhone |
+| 6 | FireExtinguisher |
+
+---
+
+# 📂 Project Structure (Final Submission)
+**Note:**
+- Ignore the hello folder  
+- Open Desktop/Hackwithblr and download TechieBunnies.zip
+
+
+```
+TechieBunnies/
+│── best.pt
+│── data.yaml (Make sure you modify data.yaml accordingly to you before running)
+│── train.py
+│── predict.py
+│── requirements.txt
+│── report.pdf
+│── bonus_report.pdf
+│
+│── train/ (REQUIRED for training - Add manually if using train.py)
+│   ├── images/
+│   └── labels/
+│
+│── val/ (REQUIRED for validation)
+│   ├── images/
+│   └── labels/
+│
+│── test/ (REQUIRED for prediction - Add manually if using predict.py)
+│   ├── images/
+│   └── labels/
+```
+
+---
+
+# ⚙️ Environment Setup
+
+## 🖥 macOS / Linux
+```
+python3 -m venv venv
 source venv/bin/activate
+pip install --upgrade pip
+```
 
-**Windows**
-python -m venv venv 
+## 🪟 Windows
+```
+python -m venv venv
 venv\Scripts\activate
+pip install --upgrade pip
+```
 
-**Installing Dependencies**
-**To run train.py**
+---
 
-ultralytics>=8.3.50 
-torch>=2.1.0 
-torchvision>=0.16.0 
-numpy 
-opencv-python 
-matplotlib 
-pandas 
-pyyaml 
-tqdm 
-psutil 
-tensorboard
+# 📦 Install Dependencies
+```
+pip install ultralytics torch torchvision numpy opencv-python matplotlib pandas pyyaml tqdm psutil tensorboard
+```
 
-**To run predict.py**
+or
+
+```
 pip install -r requirements.txt
+```
 
-**Dataset Requirements**
-For Training (train.py)
-train/
-| |-- images/
-| |-- labels/
+---
 
-For Prediction (predict.py) 
-test/
-| |-- images/
-| |-- labels/
 
-**Expected Outputs & Interpretation** 
-You will receive: 
-best.pt → highest mAP model 
-last.pt → last epoch model 
-results.png → plot of losses and metrics 
-confusion_matrix.png 
-precision_recall_curve.png
+# 🏋️ Training the Model
+```
+python train.py
+```
 
-**Key Metrics:** 
-mAP50 → primary accuracy metric 
-Precision → how many detections are correct 
-Recall → how many objects were found
+Outputs:
+- best.pt  
+- last.pt  
+- results.png  
+- confusion matrix  
+- PR curves  
+- mAP metrics  
 
-**Google Drive Link** for predictions on test data: 
-https://drive.google.com/drive/folders/1udKP3C7Q0TdLUMTEQXAHNPOjn2oH9lCi?usp=sharing
+---
 
-Note: Ignore the hello folder 
+# 🔍 Running Inference
+```
+python predict.py
+```
+
+Results saved in:
+```
+optimized_predictions/
+```
+
+---
+
+💾 **Model Download (Test Predictions)**  
+👉 *https://drive.google.com/drive/folders/1udKP3C7Q0TdLUMTEQXAHNPOjn2oH9lCi?usp=sharing*
+---
+
+# 🌐 Bonus Web App – SafetySense Dashboard
+
+Sci‑fi animated web app for:
+- Image upload  
+- YOLO inference  
+- Safety scoring   
+- Analytics dashboard  
+
+Built with:
+- Next.js  
+- TailwindCSS  
+- shadcn/ui  
+- Framer Motion  
+
+---
+
+# 🚧 Challenges Faced
+- Dataset imbalance  
+- Occlusions in cluttered scenes  
+- GitHub LFS file limits  
+- Large model handling  
+(detailed description is given in report)
+
+---
+
+# 🏁 Conclusion
+SafetySense provides:
+- A high-performing YOLOv11x model  
+- A complete evaluation pipeline  
+- A futuristic safety analysis web interface  
+- Robust synthetic‑to‑real generalization strategies  
+
+---
+
+# 👥 Team TechieBunnies
+- Sahiti Potini  
+- Navya  
+- Varun E  
+- Tejas Kollipara  
+- Adithya Kommuri  
