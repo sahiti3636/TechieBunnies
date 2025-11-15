@@ -155,7 +155,7 @@ SafetySense provides:
 
 # 👥 Team TechieBunnies
 - Sahiti Potini  
-- Navya  
+- Navya Sharma
 - Varun E  
 - Tejas Kollipara  
 - Adithya Kommuri  
