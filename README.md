@@ -59,3 +59,5 @@ Recall → how many objects were found
 
 **Google Drive Link** for predictions on test data: 
 https://drive.google.com/drive/folders/1udKP3C7Q0TdLUMTEQXAHNPOjn2oH9lCi?usp=sharing
+
+Note: Ignore the hello folder 
