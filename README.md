@@ -3,27 +3,7 @@ Safety Object Detection – YOLOv11
 
 **PROJECT STRUCTURE**
 
-TechieBunnies/
-|-- best.pt
-|-- data.yaml (Make sure you modify data.yaml accordingly to you before running)
-|-- train.py
-|-- predict.py
-|-- requirements.txt
-|-- report.pdf
-|-- bonus_report.pdf
-|
-|-- train/ (REQUIRED for training – Add manually if using train.py)
-| |-- images/
-| |-- labels/
-|
-|-- val/ (REQUIRED for validation)
-| |-- images/
-| |-- labels/
-|
-|-- test/ (REQUIRED for prediction – Add manually if using predict.py)
-| |-- images/
-| |-- labels/
-|
+<img width="1198" height="888" alt="image" src="https://github.com/user-attachments/assets/a0c1919a-1d7f-4b9f-9db4-c7d649b5f0ba" />
 
 **Environment Setup**
 
